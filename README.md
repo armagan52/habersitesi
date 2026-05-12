@@ -29,7 +29,6 @@ Kurulum ve Çalıştırma
 Projeyi yerel ortamında çalıştırmak için aşağıdaki adımları izleyebilirsin. Proje frontend ve backend olmak üzere iki ana dizinden oluşmaktadır.
 
 1. Depoyu Klonlayın
--git clone https://github.com/KULLANICI_ADIN/Haberdb.git
 -cd Haberdb
 
 2. Backend (Sunucu) Kurulumu
