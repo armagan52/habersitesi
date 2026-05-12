@@ -1,0 +1,159 @@
+/* GENEL */
+body {
+  margin: 0;
+  background: #f4f6f8;
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* HEADER */
+.public-header {
+  background: #0f172a;
+  color: white;
+  padding: 16px 0;
+}
+
+.public-header .container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap; /* 🔥 mobil için */
+}
+
+.public-header h1 {
+  font-size: 22px;
+  margin: 0;
+}
+
+/* NAV */
+.nav {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap; /* 🔥 mobilde alt satıra geçer */
+  justify-content: center;
+}
+
+.nav a {
+  color: #e5e7eb;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.nav a:hover {
+  color: #38bdf8;
+}
+
+/* LOGIN LINK */
+.public-header .login-link {
+  color: #38bdf8;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* CONTENT */
+.public-container {
+  max-width: 1200px;
+  margin: 32px auto;
+  padding: 0 16px;
+}
+
+/* GRID */
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+/* CARD */
+.news-card {
+  background: white;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.news-card-body {
+  padding: 16px;
+  flex: 1;
+}
+
+.news-category {
+  display: inline-block;
+  background: #e0f2fe;
+  color: #0369a1;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 999px;
+  margin-bottom: 8px;
+}
+
+.news-card h2 {
+  font-size: 18px;
+  margin: 8px 0;
+  color: #0f172a;
+}
+
+.news-card p {
+  font-size: 14px;
+  color: #475569;
+  line-height: 1.6;
+}
+
+/* FOOTER BUTTON */
+.news-card-footer {
+  padding: 14px 16px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.news-card-footer a {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  background: #2563eb;
+  color: white;
+  text-decoration: none;
+  padding: 10px 0;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+/* ===================== */
+/* 📱 RESPONSIVE KISIM */
+/* ===================== */
+
+/* TABLET */
+@media (max-width: 1024px) {
+  .news-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* MOBİL */
+@media (max-width: 768px) {
+  .public-header .container {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+
+  .nav {
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .news-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .news-card h2 {
+    font-size: 17px;
+  }
+}

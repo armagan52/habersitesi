@@ -1,0 +1,86 @@
+.hero-slider {
+  position: relative;
+  height: 400px;              /* ⬅ küçültüldü */
+  max-width: 1200px;          /* ⬅ site genişliği */
+  margin: 40px auto 50px;     /* ⬅ üst-alt ve yan boşluk */
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.hero-slider img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ALT KARARTI + YAZI */
+.hero-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 30px 40px;         /* ⬅ biraz sıkılaştırıldı */
+  background: linear-gradient(
+    to top,
+    rgba(0,0,0,0.75),
+    rgba(0,0,0,0.1),
+    transparent
+  );
+  color: white;
+}
+
+.hero-category {
+  display: inline-block;
+  background: #38bdf8;
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.hero-overlay h2 {
+  font-size: 26px;            /* ⬅ küçültüldü */
+  margin: 10px 0;
+  line-height: 1.3;
+}
+
+.hero-overlay p {
+  max-width: 520px;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+/* DEVAMINI OKU */
+.hero-btn {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 9px 16px;
+  background: #2563eb;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* OKLAR */
+.hero-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.45);
+  border: none;
+  color: white;
+  font-size: 26px;            /* ⬅ küçültüldü */
+  padding: 6px 12px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.hero-arrow.left {
+  left: 12px;
+}
+
+.hero-arrow.right {
+  right: 12px;
+}

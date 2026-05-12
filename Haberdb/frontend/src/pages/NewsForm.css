@@ -1,0 +1,51 @@
+.news-form-container {
+  max-width: 700px;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.news-form-container h1 {
+  margin-bottom: 20px;
+}
+
+.news-form-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.news-form-container label {
+  font-weight: bold;
+  margin-bottom: 6px;
+  margin-top: 14px;
+}
+
+.news-form-container input,
+.news-form-container textarea,
+.news-form-container select {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  font-size: 14px;
+}
+
+.news-form-container textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.news-form-container button {
+  margin-top: 20px;
+  padding: 12px;
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.news-form-container button:hover {
+  background: #1d4ed8;
+}

@@ -1,0 +1,98 @@
+/* --- İSTATİSTİK SAYFASI ANA KAPLAYICI --- */
+.stats-container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  animation: fadeIn 0.6s ease-out;
+}
+
+.stats-container h1 {
+  color: #111827;
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #e5e7eb;
+  padding-bottom: 10px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+.stat-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-left: 6px solid #e5e7eb;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.stat-card h3 {
+  color: #6b7280;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.stat-card .number {
+  color: #1f2937;
+  font-size: 38px;
+  font-weight: 800;
+  line-height: 1;
+}
+
+/* Renkler */
+.stat-card.blue { border-left-color: #3b82f6; }
+.stat-card.blue .number { color: #3b82f6; }
+
+.stat-card.green { border-left-color: #10b981; }
+.stat-card.green .number { color: #10b981; }
+
+.stat-card.orange { border-left-color: #f59e0b; }
+.stat-card.orange .number { color: #f59e0b; }
+
+.stat-card.purple { border-left-color: #8b5cf6; }
+.stat-card.purple .number { color: #8b5cf6; }
+
+/* Detay Kutusu */
+.stats-detail-box {
+  background: #fff;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.stats-detail-box h2 {
+  font-size: 20px;
+  color: #374151;
+  margin-bottom: 15px;
+}
+
+.stats-detail-box p {
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+}
